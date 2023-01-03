@@ -84,9 +84,17 @@ div {
 
 /* inside 1: map */
 #lookAll {
-    top: 0;
-    min-width: 60vw;
+    position: absolute;
+    top: 7%;
+    left: 21%;
+    position: fixed;    
+    margin: 1%;
+    min-width: 61.5vw;
+    min-height: 3%;
     display: block;    
-    background: #ede6f2;
-    color: #364958;
+    background: #080708;
+    color: #ede6f2;
+    border-color: aqua;
+    border-style:double;
+    font-size: large;
 }
