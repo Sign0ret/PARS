@@ -1,0 +1,92 @@
+/* GENERAL */
+* {
+    margin: 0;
+    background: #080708;
+    box-sizing: border-box;
+}
+div {
+    min-height: 100vh;
+    color: #ede6f2;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+/* Part 1: outside: index.html */
+#email {
+    color: #ede6f2;
+}
+#password {
+    color: #ede6f2 ;
+}
+#pars:link {
+    color: #ede6f2;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#pars:visited {
+    color: #ede6f2;
+}
+
+#pars:hover {
+    color: #A6051A;
+    text-decoration: none;
+}
+
+#pars:active {
+    color: #080708;
+} 
+
+/* Part 2: inside: map.html / events.html / feed.html / profile.html / roulette.html / poker.html */
+.menu {
+    font-size: 1.5rem;
+    color: darkred;
+    background: #080708;
+    position: fixed;
+    top: 0;
+    float: left;
+    width: 20%;
+    height: 5%;
+    margin: 1.25%;
+    border-color: darkred;
+}
+.menu:hover {
+    color:#ede6f2;
+    border-color: #ede6f2;
+}
+#map {
+    left: 0%;
+}
+#events {
+    left: 20.75%;
+}
+#feed {
+    left: 41.5%;
+}
+#profile {
+    left: 62.25%
+}
+#roulette {
+    width: 7%;
+    right: 7%
+}
+#poker {
+    width: 7%;
+    right: 0;
+}
+.presentation-img {
+    background: url();
+    background-size:cover;
+}
+
+/* inside 1: map */
+#lookAll {
+    top: 0;
+    min-width: 60vw;
+    display: block;    
+    background: #ede6f2;
+    color: #364958;
+}
