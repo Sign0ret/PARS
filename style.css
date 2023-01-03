@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 div {
-    min-height: 100vh;
+    min-height: 20vh;
     color: #ede6f2;
     font-size: 60px;
     display: flex;
@@ -84,7 +84,7 @@ div {
 
 /* inside 1: map */
 #lookAll {
-    position: absolute;
+    box-sizing: border-box;
     top: 7%;
     left: 21%;
     position: fixed;    
@@ -97,4 +97,20 @@ div {
     border-color: aqua;
     border-style:double;
     font-size: large;
+}
+
+/* inside 2: events */
+.extract {
+    width: 60vw;
+    min-height: 15vh;
+    margin: 5% auto;
+    justify-content: left;
+    /* border: 2px solid red; */
+    position: static;
+    border-color: #ede6f2;
+}
+
+img {
+    width: 30%;
+    /*esto quita el espacio que queda por debajo*/
 }
