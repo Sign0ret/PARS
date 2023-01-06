@@ -16,7 +16,7 @@
 
 }
 div {
-    min-height: 20vh;
+    min-height: 10vh;
     color: var(--colorLight);
     font-size: 60px;
     display: flex;
@@ -129,28 +129,39 @@ div {
 }
 /* inside 2: events */
 .extract-fete {
+    background: url(./img/badbunny.jpg)
     min-width: 40vw;
-    min-height: 30vh;
-    margin: 5% auto;
-    display: inline;
+    min-height: 20vh;
+    margin: 5% 10%;
+    display: block;
     justify-content: center;
     justify-content: center;
     align-items: center;
     text-align: center;
     /* border: 2px solid red; */
-    position: static;
+    position:static;
     border-color: var(--colorLight);
     color: var(--colorLight);
+    /* float: left; */
+    background-color: #8b0000;
+}
+.extract-all {
+    margin: 0;
+    background
 }
 .extract-cover {
+    display: block;
     height: 20px;
-    float: left;
+    width: 20px;
+    
+    /* float: left; */
 }
 .extract-description {
     font-size: 1rem;
     background: red;
     margin: 10px;
-    display: inline-block;
+    display: block;
+    float: left;
 
 }
 /* .extract-audio {
