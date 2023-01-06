@@ -1,12 +1,23 @@
 /* GENERAL */
+:root {
+    /* main colors */
+    --colorDark: #080708;
+    --colorLight: #ede6f2;
+    --colorBlood: #A6051A;
+    --colorBlood2: #8b0000;
+    /* specific colors */
+    --colorChosenOne: #080708;
+    --colorSearchBar: #00ffff;
+}
 * {
     margin: 0;
-    background: #080708;
+    background: var(--colorDark);
     box-sizing: border-box;
+
 }
 div {
     min-height: 20vh;
-    color: #ede6f2;
+    color: var(--colorLight);
     font-size: 60px;
     display: flex;
     justify-content: center;
@@ -15,47 +26,50 @@ div {
 }
 /* Part 1: outside: index.html */
 #email {
-    color: #ede6f2;
+    color: var(--colorLight);
 }
 #password {
-    color: #ede6f2 ;
+    color: var(--colorLight) ;
 }
 #pars:link {
-    color: #ede6f2;
+    color: var(--colorLight);
     text-decoration: none;
     font-size: 2em;
     font-weight: bold;
 }
 
 #pars:visited {
-    color: #ede6f2;
+    color: var(--colorLight);
 }
 
 #pars:hover {
-    color: #A6051A;
+    color: var(--colorBlood);
     text-decoration: none;
 }
 
 #pars:active {
-    color: #080708;
+    color: var(--colorDark);
 } 
 
 /* Part 2: inside: map.html / events.html / feed.html / profile.html / roulette.html / poker.html */
 .menu {
     font-size: 1.5rem;
-    color: darkred;
-    background: #080708;
+    color: var(--colorBlood2);
+    background: var(--colorDark);
     position: fixed;
     top: 0;
     float: left;
     width: 20%;
     min-height: 5%;
     margin: 1.25%;
-    border-color: darkred;
+    border-color: var(--colorBlood2);
 }
 .menu:hover {
-    color:#ede6f2;
-    border-color: #ede6f2;
+    color:var(--colorLight);
+    border-color: var(--colorLight);
+}
+.active {
+    border-color: var(--colorChosenOne);
 }
 #map {
     left: 0%;
@@ -92,25 +106,62 @@ div {
     min-width: 61.5vw;
     min-height: 3%;
     display: block;    
-    background: #080708;
-    color: #ede6f2;
-    border-color: aqua;
+    background: var(--colorDark);
+    color: var(--colorLight);
+    border-color: var(--colorSearchBar);
     border-style:double;
     font-size: large;
 }
+#geography {
+    background: url(./img/map.jpg);
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    color: var(--colorLight);
+    font-size: 60px;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5%;
+    border-color: var(--colorSearchBar);
+    border-width: 10%;
 
+}
 /* inside 2: events */
-.extract {
-    width: 60vw;
-    min-height: 15vh;
+.extract-fete {
+    min-width: 40vw;
+    min-height: 30vh;
     margin: 5% auto;
-    justify-content: left;
+    display: inline;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     /* border: 2px solid red; */
     position: static;
-    border-color: #ede6f2;
+    border-color: var(--colorLight);
+    color: var(--colorLight);
 }
+.extract-cover {
+    height: 20px;
+    float: left;
+}
+.extract-description {
+    font-size: 1rem;
+    background: red;
+    margin: 10px;
+    display: inline-block;
 
-img {
-    width: 30%;
-    /*esto quita el espacio que queda por debajo*/
 }
+/* .extract-audio {
+
+}
+.extract-join {
+
+}
+.extract-later {
+
+}
+.extract-data {
+
+} */

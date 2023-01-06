@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <style>
+        /* Add some style to the login form */
+        .login-form {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #4caf50;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        /* Style for the success message */
+        .success {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 24px;
+            color: #4caf50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-form">
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+    <div class="success" style="display: none;">YOU DID IT</div>
+    <script>
+        // Add some JavaScript to handle the form submission
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const username = event.target[0].value;
+            const password = event.target[1].value;
+
+            // Validate the input
+            if (!validateInput(username, password)) {
+                return;
+            }
+
+            // Check the entered credentials against the database
+            if (checkCredentials(username, password)) {
+                // Allow access
+                form.style.display = 'none';
+                document.querySelector('.success').style.display = 'block';
+            } else {
+                console.log('Invalid username or password');
+            }
+        });
+
+        // Validation function
+        // function
